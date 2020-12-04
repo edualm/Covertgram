@@ -20,6 +20,17 @@ struct CovertgramApp: App {
                 
                 scene.titlebar?.titleVisibility = .hidden
                 scene.titlebar?.toolbar = nil
+                
+                let windowSize = CGSize(width: scene.screen.bounds.width * 0.2 * 1.3,
+                                        height: scene.screen.bounds.height * 0.8 * 1.3)
+                
+                scene.sizeRestrictions?.minimumSize = windowSize
+                scene.sizeRestrictions?.maximumSize = windowSize
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(250)) {
+                    scene.sizeRestrictions?.minimumSize = CGSize(width: 0, height: 0)
+                    scene.sizeRestrictions?.maximumSize = CGSize(width: Int.max, height: Int.max)
+                }
             }
         }
         #endif
