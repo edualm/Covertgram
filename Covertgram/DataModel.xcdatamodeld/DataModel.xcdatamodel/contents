@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17511" systemVersion="19G2021" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="StoredPost" representedClassName=".StoredPost" syncable="YES">
+        <attribute name="aspectRatio" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="caption" optional="YES" attributeType="String"/>
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="files" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformerName" customClassName="[String]"/>
+        <attribute name="kind" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="shortcode" attributeType="String"/>
+        <attribute name="userFullName" optional="YES" attributeType="String"/>
+        <attribute name="userId" attributeType="String"/>
+        <attribute name="userIsVerified" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="userProfilePicture" optional="YES" attributeType="String"/>
+        <attribute name="userUsername" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="StoredPost" positionX="-63" positionY="-18" width="128" height="223"/>
+    </elements>
+</model>
