@@ -82,7 +82,7 @@ struct PostView_Previews: PreviewProvider {
             }
             
             ScrollView {
-                PostView(post: MockData.Posts.possiblyBuggyCaption)
+                PostView(post: MockData.Posts.johnDoe)
                     .previewDevice(PreviewDevice(rawValue: "Apple Watch Series 6 - 40mm"))
             }
         }
