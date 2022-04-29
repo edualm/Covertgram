@@ -75,7 +75,7 @@ struct PostView: View {
             
             HStack {
                 if !showAsSaved {
-                    Label("\(post.likes) likes", systemImage: "hand.thumbsup")
+                    Label("\(post.likes != -1 ? "\(post.likes)" : "N/A") likes", systemImage: "hand.thumbsup")
                         .scaledToFit()
                         .minimumScaleFactor(0.01)
                     Spacer()
